@@ -1,0 +1,24 @@
+{
+	"name": "kea-monorepo",
+	"private": true,
+	"type": "module",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"engines": {
+		"bun": ">=1.3.0"
+	},
+	"scripts": {
+		"dev": "bun run apps/kea/src/cli.ts",
+		"check": "biome check --write . && tsc --noEmit",
+		"test": "bun ./node_modules/vitest/vitest.mjs run",
+		"build:binary": "bun build ./apps/kea/src/cli.ts --compile --minify --sourcemap --bytecode --outfile dist/kea && rm -rf dist/skills && cp -R skills dist/skills"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.9",
+		"@types/bun": "1.3.14",
+		"typescript": "7.0.2",
+		"vitest": "^4.1.10"
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.9/schema.json",
+	"files": {
+		"includes": [
+			"apps/**",
+			"packages/**",
+			"skills/**",
+			"experiments/**",
+			"!**/.venv",
+			"!**/.lake",
+			"!**/.kea",
+			"package.json",
+			"tsconfig.json",
+			"tsconfig.base.json",
+			"vitest.config.ts"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 120
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"preset": "recommended",
+			"suspicious": {
+				"noImportCycles": "error",
+				"noShadow": "error"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"semicolons": "always"
+		}
+	}
+}

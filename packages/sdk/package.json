@@ -1,0 +1,16 @@
+{
+	"name": "@kea/sdk",
+	"version": "0.1.0",
+	"type": "module",
+	"main": "./src/index.ts",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"dependencies": {
+		"@kea/core": "workspace:*",
+		"@kea/research": "workspace:*",
+		"@kea/domain-materials": "workspace:*",
+		"@kea/domain-literature": "workspace:*",
+		"@kea/domain-chemistry": "workspace:*"
+	}
+}

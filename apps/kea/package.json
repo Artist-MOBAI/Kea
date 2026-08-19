@@ -1,0 +1,19 @@
+{
+	"name": "kea",
+	"version": "0.1.0",
+	"type": "module",
+	"bin": {
+		"kea": "./src/cli.ts"
+	},
+	"dependencies": {
+		"@earendil-works/pi-agent-core": "0.84.2",
+		"@earendil-works/pi-ai": "0.84.2",
+		"@earendil-works/pi-tui": "0.84.2",
+		"@kea/core": "workspace:*",
+		"@kea/domain-chemistry": "workspace:*",
+		"@kea/domain-literature": "workspace:*",
+		"@kea/domain-materials": "workspace:*",
+		"@kea/research": "workspace:*",
+		"zod": "^4.4.3"
+	}
+}
